@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/article/custom/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/article/custom/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/article/custom/favicon.png">
+  <link rel="mask-icon" href="/article/custom/favicon.png" color="#222">
+  <meta name="google-site-verification" content="KqmD5g0Y5Assc8OcaebG-5bcWn4DtiZJJL9MIUkQhks">
+  <meta name="baidu-site-verification" content="SFQ4Lfy8Bm">
+
+<link rel="stylesheet" href="/article/css/main.css">
+
+
+<link rel="stylesheet" href="/article/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.jxpie.com","root":"/article/","scheme":"Mist","version":"7.8.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="万能的大叔 的 *第 1051 *篇原创文章   新书《刷屏》已在京东、当当等渠道上线！ 昨天，字节跳动非常低调地在北京开了一会，叫做 “2019 引擎大会”。 为什么说低调呢？参会人员虽然有上千人，但全部为定向邀请制，大会连线上的视频直播都没做。 但又挺高调的，字节跳动全线产品出动，为移动营销的下一个增长点在哪儿，提供解决方案。大叔最关心的还是抖音。大叔团队第一时间将多位高管的演讲汇总，抖音">
+<meta property="og:type" content="article">
+<meta property="og:title" content="抖音 2019 营销策略详解：抢明星资源 + 全面开放 Link + 内容聚合">
+<meta property="og:url" content="https://www.jxpie.com/article/%E6%8A%96%E9%9F%B3%202019%20%E8%90%A5%E9%94%80%E7%AD%96%E7%95%A5%E8%AF%A6%E8%A7%A3%EF%BC%9A%E6%8A%A2%E6%98%8E%E6%98%9F%E8%B5%84%E6%BA%90%20+%20%E5%85%A8%E9%9D%A2%E5%BC%80%E6%94%BE%20Link%20+%20%E5%86%85%E5%AE%B9%E8%81%9A%E5%90%88.html">
+<meta property="og:site_name" content="网络营销技巧">
+<meta property="og:description" content="万能的大叔 的 *第 1051 *篇原创文章   新书《刷屏》已在京东、当当等渠道上线！ 昨天，字节跳动非常低调地在北京开了一会，叫做 “2019 引擎大会”。 为什么说低调呢？参会人员虽然有上千人，但全部为定向邀请制，大会连线上的视频直播都没做。 但又挺高调的，字节跳动全线产品出动，为移动营销的下一个增长点在哪儿，提供解决方案。大叔最关心的还是抖音。大叔团队第一时间将多位高管的演讲汇总，抖音">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_jpg/qsq98uZRibs64K7nibRbyMkiasdS0R7ibeJibO6RBQdVKIdGpZdMiaICfGjoYzQRbkMiaKC5yyfIInIlTbW6At3bgFh7g/640?wx_fmt=jpeg">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_jpg/qsq98uZRibs77rgH7u0l6VPU85utlBRz7qwC2S6g8xd3RH8BbLibguncBRCKWiaiaq5a5D4Ku7srdFAKCumheueylQ/640?wx_fmt=jpeg">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz74OYrmMWc8sAvoXpUyerF1ovib5rOwzgQibytkHmG5JSfEhfrkRevVibug/640?wx_fmt=png">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_jpg/qsq98uZRibs77rgH7u0l6VPU85utlBRz7t0QqQ74KmU6p5b9rPvTawDbQEZbfCZiaMYQGrQlu6q5ZliapGRMIuYUg/640?wx_fmt=jpeg">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7SQtFrXyAa2SyzeaYDzPnJf4IZuUOwibWMwg8IAGwo8txWa86xejmkgw/640?wx_fmt=png">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7B2L3WN2Cf763W8jk9dqeZ2xyr1qW4Kz48KMPf3DgjJM5fX98apFUicw/640?wx_fmt=png">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_jpg/qsq98uZRibs77rgH7u0l6VPU85utlBRz7SgqGupBKMwk2JrVc6cwXanlXxWeFZLlJ1fpu3mH5kdojUM3mEGK33Q/640?wx_fmt=jpeg">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7A8edFu4iab1OyicGzBya8dxICia2L9CK1ZfdDMufQumAffFwlRHf7AicUg/640?wx_fmt=png">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7fSy8AXmDW6vvZ5CYGOQich9E304rvW8R3L9HdYLZ8CxoSDqqZIzxhoA/640?wx_fmt=png">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7KA8JyXdrAYunOA5VA48HULqJkw523BAVHfexRjyiaVzgfC0YQxQGQVQ/640?wx_fmt=png">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7pbHFq6YricBj9XblF9HnIIS51ibayKewgu7tQmsvvMVjFgDM2ibggj6jw/640?wx_fmt=png">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz70cNNpqNT5mGibqsSATSNVicwRXY4nPJqMARl7ibnbhNLXal6oLWZCu8bg/640?wx_fmt=png">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7Ize8x4BkSAyXdVyHb5HCPSsCgOk8snM10ib8bb0MXkg3VJKpjVIIAVw/640?wx_fmt=png">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7ibicGspHoS4zmG9Gial9bcVkj54cYIbmhu2HxZasPWaFiag88b9NS1bBMg/640?wx_fmt=png">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_jpg/qsq98uZRibs77rgH7u0l6VPU85utlBRz7hDiceibaaYz31LV9rflKXPXYh7j9BbibKKn2JUAnpe8gE8RlByoL1uZibA/640?wx_fmt=jpeg">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7k19fIiaN5ibJY9XicEsFkVQZAzwpX45dpia1mpsskyicOmWGekBx4A92qNA/640?wx_fmt=png">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7hxIibJzfV9Rv2SXugtO6olsU7vNM3atIwBUNLz8vIvmdX4ic802L45YA/640?wx_fmt=png">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7JTIgUIxtxk3ztI1hjsjDZ8UfaIbDHIa3NkV6FH2QdSy2ZmiamKBMjCQ/640?wx_fmt=png">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7V3BrZkhooCOkkCu6fcXqBdqCFGCKebuCvCX1gP0B6Hopr2F05SqdsQ/640?wx_fmt=png">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_jpg/qsq98uZRibs77rgH7u0l6VPU85utlBRz78MD5icHdOFX7tiazc4iaibVC89eBPicjvrrMZwNgqHrWekFjFh3mTQnvicTQ/640?wx_fmt=jpeg">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7mU6JPVV4kZuaUouXOJvETy5icMiaXx4wcbgvvpjngvn4mzaw7UeuGu2w/640?wx_fmt=png">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_jpg/lPjtIRRVL1cwtUaTQah8n0z9UaIbtoscnvzZFO5B8lBCVQkMkAbC8yVyrKxG0q6efwMHsbslGKzUylO6CBKanw/640?wx_fmt=jpeg">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_jpg/qsq98uZRibs5238dvhakzlgf67jUvlibxT3icxicxVbfbbGmRUOOEa3zOg7Kns4EFQuFcdd4gyrfAJN2ZhLDicEZ3NA/640?wx_fmt=jpeg">
+<meta property="og:image" content="https://mmbiz.qpic.cn/mmbiz_jpg/qsq98uZRibs4maAsqRcBiaBWF6fpZmf7HeFick3AEQdPzzv0O6Z4rbdKcezXupd5eKeLxibVf5KVYIDRgFr8HH7VzQ/640?wx_fmt=jpeg">
+<meta property="article:published_time" content="2020-05-24T14:00:12.000Z">
+<meta property="article:modified_time" content="2020-05-25T01:08:12.000Z">
+<meta property="article:author" content="Cherry Pie">
+<meta property="article:tag" content="抖音">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://mmbiz.qpic.cn/mmbiz_jpg/qsq98uZRibs64K7nibRbyMkiasdS0R7ibeJibO6RBQdVKIdGpZdMiaICfGjoYzQRbkMiaKC5yyfIInIlTbW6At3bgFh7g/640?wx_fmt=jpeg">
+
+<link rel="canonical" href="https://www.jxpie.com/article/%E6%8A%96%E9%9F%B3%202019%20%E8%90%A5%E9%94%80%E7%AD%96%E7%95%A5%E8%AF%A6%E8%A7%A3%EF%BC%9A%E6%8A%A2%E6%98%8E%E6%98%9F%E8%B5%84%E6%BA%90%20+%20%E5%85%A8%E9%9D%A2%E5%BC%80%E6%94%BE%20Link%20+%20%E5%86%85%E5%AE%B9%E8%81%9A%E5%90%88.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>抖音 2019 营销策略详解：抢明星资源 + 全面开放 Link + 内容聚合 | 网络营销技巧</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163666148-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-163666148-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/article/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">网络营销技巧</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/article/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/article/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/article/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/article/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-抖音今日排行榜">
+
+    <a href="https://www.jxpie.com/" rel="section"><i class="fa fa-chart-bar fa-fw"></i>抖音今日排行榜</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.jxpie.com/article/%E6%8A%96%E9%9F%B3%202019%20%E8%90%A5%E9%94%80%E7%AD%96%E7%95%A5%E8%AF%A6%E8%A7%A3%EF%BC%9A%E6%8A%A2%E6%98%8E%E6%98%9F%E8%B5%84%E6%BA%90%20+%20%E5%85%A8%E9%9D%A2%E5%BC%80%E6%94%BE%20Link%20+%20%E5%86%85%E5%AE%B9%E8%81%9A%E5%90%88.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/article/images/avatar.gif">
+      <meta itemprop="name" content="Cherry Pie">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="网络营销技巧">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          抖音 2019 营销策略详解：抢明星资源 + 全面开放 Link + 内容聚合
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-24 22:00:12" itemprop="dateCreated datePublished" datetime="2020-05-24T22:00:12+08:00">2020-05-24</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-25 09:08:12" itemprop="dateModified" datetime="2020-05-25T09:08:12+08:00">2020-05-25</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/article/categories/%E8%A7%86%E9%A2%91%E8%90%A5%E9%94%80%E6%8A%80%E5%B7%A7/" itemprop="url" rel="index"><span itemprop="name">视频营销技巧</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/qsq98uZRibs64K7nibRbyMkiasdS0R7ibeJibO6RBQdVKIdGpZdMiaICfGjoYzQRbkMiaKC5yyfIInIlTbW6At3bgFh7g/640?wx_fmt=jpeg" alt=""></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/qsq98uZRibs77rgH7u0l6VPU85utlBRz7qwC2S6g8xd3RH8BbLibguncBRCKWiaiaq5a5D4Ku7srdFAKCumheueylQ/640?wx_fmt=jpeg" alt=""></p>
+<p><strong>万能的大叔</strong> 的 *<em>第 1051 *</em>篇原创文章  </p>
+<p>新书《刷屏》已在京东、当当等渠道上线！</p>
+<p>昨天，字节跳动非常低调地在北京开了一会，叫做 “2019 引擎大会”。</p>
+<p>为什么说低调呢？参会人员虽然有上千人，但全部为定向邀请制，大会连线上的视频直播都没做。</p>
+<p>但又挺高调的，字节跳动全线产品出动，为移动营销的下一个增长点在哪儿，提供解决方案。大叔最关心的还是抖音。大叔团队第一时间将多位高管的演讲汇总，抖音 2019 年全年营销策略和具体打法也随即出炉。</p>
+<p>趁热，赶紧……</p>
+<p>1、截止 2019 年 1 月，抖音国内月活破 2.5 亿</p>
+<p>抖音总裁张楠表示，截至 2019 年 1 月，抖音国内日活用户突破 2.5 亿，国内月活用户超过 5 亿，并继续保持高速增长。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz74OYrmMWc8sAvoXpUyerF1ovib5rOwzgQibytkHmG5JSfEhfrkRevVibug/640?wx_fmt=png" alt=""></p>
+<p>值得一提的是，抖音的海外版 “TikTok” 在很多国家也都借助本地化运营实现了突破，现已覆盖全球 150 个国家和地区，先后登顶日本、泰国等各国 App Store 榜首。2018 第一季度，抖音成为全球 App Store 下载量最高的应用。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/qsq98uZRibs77rgH7u0l6VPU85utlBRz7t0QqQ74KmU6p5b9rPvTawDbQEZbfCZiaMYQGrQlu6q5ZliapGRMIuYUg/640?wx_fmt=jpeg" alt=""></p>
+<p>抖音总裁 张楠</p>
+<p>除了数据维度，张楠还特别提到了一台晚会。</p>
+<p>2018 年 10 月 19 日晚上，抖音联合浙江卫视举办了《抖音美好奇妙夜》，当晚平均收视率是 1.26，排名第一，最高的收视率达到 1.8，创了自制晚会的收视第一名，线上同步直播，整个晚会的曝光超过 280 亿。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7SQtFrXyAa2SyzeaYDzPnJf4IZuUOwibWMwg8IAGwo8txWa86xejmkgw/640?wx_fmt=png" alt=""></p>
+<p>大叔也在现场亲历了这场晚会，深深感受到的特别之处在于，非常多的晚会元素，包括舞蹈，包括音乐，表演者，都是由抖音上生产出来的，并通过抖音红遍了中国。由此说明，抖音正在制造流行，这个趋势在 2019 年将势不可挡。</p>
+<p>2、制造流行哪家强？# 来了老弟 #成抖音 top1 流行语</p>
+<p>社交平台，哪个最火，看什么？看媒体报道啥和电商卖啥。这几天，吴亦凡和李雪琴的互 “盘”，成为热门话题。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7B2L3WN2Cf763W8jk9dqeZ2xyr1qW4Kz48KMPf3DgjJM5fX98apFUicw/640?wx_fmt=png" alt=""></p>
+<p>我们来看看抖音自己官方的数据。</p>
+<p>抖音市场总经理支颖介绍，抖音在 2018 年制造的流行语前五名，分别是：# 来了老弟、# 真好体、# 我怎么这么好看、# 生活要有仪式感和 #满满的正能量。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/qsq98uZRibs77rgH7u0l6VPU85utlBRz7SgqGupBKMwk2JrVc6cwXanlXxWeFZLlJ1fpu3mH5kdojUM3mEGK33Q/640?wx_fmt=jpeg" alt=""></p>
+<p>抖音市场总经理 支颖</p>
+<p>在文化方面，抖音的 #嗯，奇妙博物馆 #短短 3 天的播放量超过 4.27 亿，而《第一届文物戏精大会》的总体播放量达到 1.18 亿，是大英博物馆 2016 年全年参观人数的 184 倍。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7A8edFu4iab1OyicGzBya8dxICia2L9CK1ZfdDMufQumAffFwlRHf7AicUg/640?wx_fmt=png" alt=""></p>
+<p>在音乐领域，目前有 1.4 万音乐人活跃在抖音，2018 年产出 8 万多条原创音乐，共计被使用 1.5 亿次，其中有非常多的音乐刷屏，比如《学猫叫》、《纸短情长》、《空空如也》、《白羊》、《西安人的歌》等；</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7fSy8AXmDW6vvZ5CYGOQich9E304rvW8R3L9HdYLZ8CxoSDqqZIzxhoA/640?wx_fmt=png" alt=""></p>
+<p>在公益领域，抖音的文旅扶贫计划、向日葵计划和声量计划备受关注，抖音城市形象相关视频数量近 8000 万，总播放量超过 2200 亿次。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7KA8JyXdrAYunOA5VA48HULqJkw523BAVHfexRjyiaVzgfC0YQxQGQVQ/640?wx_fmt=png" alt=""></p>
+<p>3、抖音成为票房保证？top50 电影有 41 部在抖音营销</p>
+<p>大叔单独说娱乐领域。</p>
+<p>抖音官方的数据显示，在电影领域，2018 年 Top 50 的电影中有 41 部在抖音有官方运营。其中，票房前十位的影片平均每部电影在抖音相关视频的播放量超过 1.35 亿。</p>
+<p>几个细分领域的第一分别是：《毒液》在抖音有 186 个挑战话题，《复联 3》在抖音的投稿视频播放量超过 18 亿，《一出好戏》有 12.8 万个投稿视频，有 203 万《西虹市首富》的视频使用了《卡路里》作为配乐。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7pbHFq6YricBj9XblF9HnIIS51ibayKewgu7tQmsvvMVjFgDM2ibggj6jw/640?wx_fmt=png" alt=""></p>
+<p>这个虽然也属于制造互联网流行文化的一部分，但大叔单独拿出来说，因为影视宣发在抖音的趋势真的非常有效，大叔自己也是感同身受。</p>
+<p>此外，在台网互动、影视运营和星粉互动上，这些原本都是微博的传统优势项目，现在来看，正在被抖音追赶，甚至部分已经超越。吴亦凡和李雪琴在抖音的互动看似有些荒诞，背后反应的是明星和粉丝互动新型社区，在抖音已经慢慢开始产生。所以，抖音已不仅仅是流行的体现者，更是制造者和引领者。</p>
+<p>4、全面进军社交？抖音上线社交新功能 “随拍”</p>
+<p>这是昨天大会透露的一个全新的产品。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz70cNNpqNT5mGibqsSATSNVicwRXY4nPJqMARl7ibnbhNLXal6oLWZCu8bg/640?wx_fmt=png" alt=""></p>
+<p>大叔猜测，抖音很早就意识到了 “熟人社交” 的重要性，但在抖音的前期运营上，则更倾向于陌生人和基于兴趣的智能分发，而成为 5 亿月活的产品之后，抖音正式开始聚焦熟人社交。</p>
+<p>“随拍”功能有 3 个主要特性：视频 72 小时后消失，必须是好友关系，用户评论被默认为一对一发私信，这些 “特性” 都是为了朋友之间能够在抖音无顾虑地、没有压力地交流。请注意，抖音开始强调产品的方向开始从分享到交流。</p>
+<p>根据大叔的观察，抖音在私信功能的洞察和应用上，伴随 “随拍” 的上线，能极大帮助抖音沉淀用户关系链，这是一个新的大趋势。</p>
+<p>5、抖音内容生态三大新策略：2019 年将引入大批明星入驻</p>
+<p>支颖在现场公布了抖音 2019 年打造内容生态的三个策略：IP 衍生 + 音乐扶持 + 垂类深耕。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7Ize8x4BkSAyXdVyHb5HCPSsCgOk8snM10ib8bb0MXkg3VJKpjVIIAVw/640?wx_fmt=png" alt=""></p>
+<p>在 IP 衍生方面，抖音会继续做 “抖音美好奇妙夜”，并拓展到全球。实际上，抖音日本已经拿下了红白歌会的唯一官方互动，相当于中国的春晚。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7ibicGspHoS4zmG9Gial9bcVkj54cYIbmhu2HxZasPWaFiag88b9NS1bBMg/640?wx_fmt=png" alt=""></p>
+<p>为推动明星达人内容共建，“明星 PD 计划”将是抖音今年的重点运营项目，比如摩登兄弟的刘宇宁和 “菊姐” 王菊这样的草根明星，其实非常需要一个互动平台展示自己的真实生活，反哺 “明星养成类” 的粉丝运营模式，而其他明星其实更需要这样的一个产品，拉近与粉丝之间的关系。</p>
+<p>抖音昨天公布的数据，截至目前，大概有超过两千个的名人明星入驻，其中覆盖了娱乐、时尚等热点领域，大叔认为，这还远远不够。当然，一开始不能引入太多明星，不然达人没得玩了。所以，2019 年的一个非常明确的趋势就是：抖音将大批量进入明星入驻并运营，加上平台给抖音达人的赋能，打造更多优质 IP。</p>
+<p>音乐是抖音打造爆款不可获取的元素，所以，抖音将在今年加大对原创音乐的扶持，这对于有才华的音乐人来说，是绝佳的机会。</p>
+<p>而在垂类细分领域，老实说，抖音在之前做得并不是很好，今年将特别推出多元用户圈层计划，满足时尚、艺术、动漫等不同圈层用户的深度内容需求。</p>
+<p>6、抖音视频营销三大新计划：TV 计划 + Link 计划 + 超级品牌计划</p>
+<p>随后，抖音营销全国负责人王丁虓宣布，2019 年以视频社交平台为原点，抖音将通过 TV 计划、Link 计划和超级品牌计划，实现视频化营销三重助力，帮助品牌打通商业链路。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/qsq98uZRibs77rgH7u0l6VPU85utlBRz7hDiceibaaYz31LV9rflKXPXYh7j9BbibKKn2JUAnpe8gE8RlByoL1uZibA/640?wx_fmt=jpeg" alt=""></p>
+<p>抖音营销全国负责人 王丁虓</p>
+<p>大叔分别做个介绍和点评。</p>
+<p>去年，抖音在国内创新地推出了一个产品：DTV（Dou True View），用户观看 5 秒之后才收费，这种有效付费的计费方式，极大地提升了品牌投放广告的效果。</p>
+<p>2019 年，王丁虓表示，2019 年想做一件新的事情，就是 Top View。覆盖开屏和信息流首位第一视觉位置，帮品牌做到最大曝光，对满足新片首发、节点大促、品牌造势这样的营销诉求，将带来前所未有的曝光冲击力，帮助品牌全面霸屏。大叔理解，就是一句话：抖音的 Top View 深受好评。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7k19fIiaN5ibJY9XicEsFkVQZAzwpX45dpia1mpsskyicOmWGekBx4A92qNA/640?wx_fmt=png" alt=""></p>
+<p>7、抖音将全面开放 Link，让每个抖音用户都成为你的代言人</p>
+<p>抖音开放外部链接的进程，其实一直都是非常克制的，终于，在 2019 年将全面开放，但前提是精准标签。</p>
+<p>无论是 PGC、UGC 还是 OGC 内容，抖音都可以为视频添加 Link，而这个 Link 并不是简单的一个了解，是基于人工智能精准匹配的内容标签，简而言之，就是要有密切的相关性，不违和。</p>
+<p>实现的结果就是，让 75% 的自然内容流量与商业落地场景联系起来。比如 “IP Link” 可实现优质内容串联协同，“地点 Link”凭借 POI 可以实现线上线下场景转化，而当 Link 计划应用于挑战赛、美食、时尚、旅行等各类视频时，每个用户都是导流源，为聚合信息、地理位置、电商购买页面带来转化，最终实现营销闭环。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7hxIibJzfV9Rv2SXugtO6olsU7vNM3atIwBUNLz8vIvmdX4ic802L45YA/640?wx_fmt=png" alt=""></p>
+<p>所以，企业和商家能否利用好这个 Link 计划，以及打造最适合自己的场景，让每个人成为你的代言人，帮你提升转化率，对 2019 年的营销寒冬来说，是一把可以烧旺的火炬。</p>
+<p>8、“快闪店” 缩短购买决策，“超级品牌馆” 打造原生内容聚合</p>
+<p>蓝 V 的运营在 2019 年将更加成为常态，所以，抖音提出 “长线经营理念”，这点大叔十分认同。如何做好运营？建议你主动参加抖音官方的培训和活动，也多关注大叔的自媒体。</p>
+<p>大叔重点说 “快闪店” 和“超级品牌馆”这两个新产品。</p>
+<p>先说快闪店。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7JTIgUIxtxk3ztI1hjsjDZ8UfaIbDHIa3NkV6FH2QdSy2ZmiamKBMjCQ/640?wx_fmt=png" alt=""></p>
+<p>大叔前几天刚写了抖音和红米开的全球首家快闪店的案例，就是超级品牌计划的一个产品。大叔认为，快闪店的最大优势就是 “快”，虽然抖音早就开放了电商外链，也可以在蓝 V 首页等区域显示，但是，抖音的快闪店所拥有的沉浸式体验，是其他外链所无法比较的，原来，抖音给快闪店做了预加载。</p>
+<p>从刷到一个有趣的竖版视频，再到点击链接瞬间进入一个竖版的预约页面，通过点击可直达快闪店页面，迅速 get 产品信息并完成一站式购买，整个通路流畅无阻，大大缩短购买决策路径。最终，红米 Redmi Note 7 在抖音获得了 558 万的预约量。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7V3BrZkhooCOkkCu6fcXqBdqCFGCKebuCvCX1gP0B6Hopr2F05SqdsQ/640?wx_fmt=png" alt=""></p>
+<p>如果说快闪店解决的是缩短购买决策路径的问题，那超级品牌馆就是专门为那些天然的存在较长购买决策的商品，提供的一种全新解决方案，比如汽车。</p>
+<p>字节跳动营销中心总经理陈都烨表示，汽车行业就是一个非常典型的，需要在这个过程中间，给消费者提供大量的信息，比如说新车，很多的口碑的信息，需要看到朋友的推荐，意见领袖的推荐，所以我们看到在超级品牌馆上有一个叫圈子的功能，让他自动聚合在这个平台上的内容，可能是用户的内容，可能是关注的专家的内容，可能是其他的内容机构的内容。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/qsq98uZRibs77rgH7u0l6VPU85utlBRz78MD5icHdOFX7tiazc4iaibVC89eBPicjvrrMZwNgqHrWekFjFh3mTQnvicTQ/640?wx_fmt=jpeg" alt=""></p>
+<p>字节跳动营销中心总经理 陈都烨</p>
+<p>同时，因为是一个非常复杂的商品，还需要很多的信息和知识，比如说车型、参数、售价等等，我们也会从整体的数据里面整合，包括品牌的介绍、价格、参数都会在这个页面上，所以非常原生，看上去就很像一个话题，内容其实在这个平台上，为这个商品是可以自动聚合的，在后端我们会把转化组件搭建上面，很无缝连接，从兴趣激发到最终的行动，包括在前端也会打通不同的流量端。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/qsq98uZRibs77rgH7u0l6VPU85utlBRz7mU6JPVV4kZuaUouXOJvETy5icMiaXx4wcbgvvpjngvn4mzaw7UeuGu2w/640?wx_fmt=png" alt=""></p>
+<p>大叔的理解，超级品牌馆不是简单的 loading 页或者官网，而是通过聚合抖音平台上的 UGC、PGC、OGC 内容，结合多模块、多场景引导用户、留资转化，有点像知乎热门话题或与百度品牌专栏的结合，但内容更丰富和原生，这是一个新机会。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/lPjtIRRVL1cwtUaTQah8n0z9UaIbtoscnvzZFO5B8lBCVQkMkAbC8yVyrKxG0q6efwMHsbslGKzUylO6CBKanw/640?wx_fmt=jpeg" alt=""></p>
+<p>万能的大叔 第一本著作《刷屏》</p>
+<p>可被复制的、制造刷屏级传播事件的方法论</p>
+<p>在京东、当当以及各大书店开售咯！</p>
+<p>▼▼▼</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/qsq98uZRibs5238dvhakzlgf67jUvlibxT3icxicxVbfbbGmRUOOEa3zOg7Kns4EFQuFcdd4gyrfAJN2ZhLDicEZ3NA/640?wx_fmt=jpeg" alt=""></p>
+<p>长按扫码  申请加入 20 万公关社群</p>
+<p>备注暗号：勾搭大叔</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/qsq98uZRibs4maAsqRcBiaBWF6fpZmf7HeFick3AEQdPzzv0O6Z4rbdKcezXupd5eKeLxibVf5KVYIDRgFr8HH7VzQ/640?wx_fmt=jpeg" alt=""></p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/article/tags/%E6%8A%96%E9%9F%B3/" rel="tag"># 抖音</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/article/2019%20%E6%8A%96%E9%9F%B3%E8%90%A5%E9%94%80%E6%8E%A8%E4%BB%8B%E4%BC%9A%EF%BC%8C%E6%8E%A2%E5%AF%BB%E7%9F%AD%E8%A7%86%E9%A2%91%E8%90%A5%E9%94%80%E8%BF%9B%E5%8C%96%E4%B9%8B%E8%B7%AF.html" rel="prev" title="2019 抖音营销推介会，探寻短视频营销进化之路">
+      <i class="fa fa-chevron-left"></i> 2019 抖音营销推介会，探寻短视频营销进化之路
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Cherry Pie</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/article/archives/">
+        
+          <span class="site-state-item-count">12</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/article/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/article/tags/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Cherry Pie | contact@mail.cherrysoso.com</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/article/lib/anime.min.js"></script>
+  <script src="/article/lib/velocity/velocity.min.js"></script>
+  <script src="/article/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/article/js/utils.js"></script>
+
+<script src="/article/js/motion.js"></script>
+
+
+<script src="/article/js/schemes/muse.js"></script>
+
+
+<script src="/article/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
