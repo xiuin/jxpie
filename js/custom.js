@@ -49,11 +49,11 @@ function createTable(dataType, data) {
 
 function requestData(dataType) {
     htmlobj = $.ajax({
-        url: "https://creator.douyin.com/aweme/v1/creator/data/billboard/?billboard_type=" + dataType,
+        url: "https://1911958968496216.cn-shanghai.fc.aliyuncs.com/2016-08-15/proxy/python/douyin/" + dataType,
         type: 'GET',
         async: true,
         success: function(data) {
-            createTable(dataType, data);
+            createTable(dataType, JSON.parse(data));
         },
         error: function() {
         }
