@@ -15,7 +15,7 @@ function secondToDate(result) {
 function createTable(dataType, data) {
     s = ''
     j = data['billboard_data']
-    for (var x of j) {
+    for (const [index, x] of j.entries()) {
         if (dataType == 1 || dataType == 9) {
             s = s + '<tr><td>' + x.rank + '.</td>' +
                     '<td><span style="white-space: normal;">' + x.title + '</span></td>' +
@@ -43,8 +43,25 @@ function createTable(dataType, data) {
                     '<td><span style="white-space: normal;">' + x.title + ' [' + x.author + ']</span></td>' +
                     '<td><span><i class="icon ion-fireball"></i>' + parseInt(x.value)/1000 + 'w</span></td></tr>'
         }    else {}
+        if (index == 2) {
+            s = s + '<tr><td colspan="4" id="adOne"></td></tr>'
+        }
+
     }
     $(table).find('tbody').append(s)
+}
+
+function createAndAppendAdsElement(id, adUnitID) {
+  var parent = document.getElementById(id);
+  var ele = document.createElement('ins');
+  ele.style.display = 'block';
+  ele.className = 'adsbygoogle';
+  ele.setAttribute('data-ad-format', 'fluid');
+  ele.setAttribute('data-ad-layout-key', '-e3+q+33-nw+vn');
+  ele.setAttribute('data-ad-client', 'ca-pub-5277012882124453');
+  ele.setAttribute('data-ad-slot', adUnitID);
+  parent.appendChild(ele);
+  (adsbygoogle = window.adsbygoogle || []).push({});
 }
 
 function requestData(dataType) {
@@ -54,6 +71,7 @@ function requestData(dataType) {
         async: true,
         success: function(data) {
             createTable(dataType, JSON.parse(data));
+            createAndAppendAdsElement('adOne', '1666208762');
         },
         error: function() {
         }
