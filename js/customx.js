@@ -44,7 +44,7 @@ function createTable(dataType, data) {
                     '<td><span><i class="icon ion-fireball"></i>' + parseInt(x.value)/1000 + 'w</span></td></tr>'
         }    else {}
         if (index == 2) {
-            s = s + '<tr><td colspan="4" id="adOne"></td></tr>'
+            s = s + '<tr><td>x.</td><td colspan="3" id="adOne"></td></tr>'
         }
 
     }
