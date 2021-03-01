@@ -77,7 +77,7 @@ function requestData(dataType) {
                 createAndAppendAdsElement('ad-1', '1666208762');
             } else {
                 for (i = 3; i < 50; i+=4) {
-                    id = 'ad-'+parseInt(i)
+                    id = 'ad-' + parseInt(i)
                     createAndAppendAdsElement(id, '1666208762');
                 }
             }
