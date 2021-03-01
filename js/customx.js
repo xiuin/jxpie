@@ -43,8 +43,10 @@ function createTable(dataType, data) {
                     '<td><span style="white-space: normal;">' + x.title + ' [' + x.author + ']</span></td>' +
                     '<td><span><i class="icon ion-fireball"></i>' + parseInt(x.value)/1000 + 'w</span></td></tr>'
         }    else {}
-        if (index == 2) {
-            s = s + '<tr><td>x.</td><td colspan="3" id="adOne"></td></tr>'
+        if (dataType != 4 && index == 2) {
+            s = s + '<tr><td>x.</td><td colspan="3" id="ad-1"></td></tr>'
+        } else if (dataType == 4 && (index+1) % 4 == 0) {
+            s = s + '<tr><td>x.</td><td colspan="3" id="ad-'+parseInt(index)+'"></td></tr>'
         }
 
     }
@@ -71,7 +73,14 @@ function requestData(dataType) {
         async: true,
         success: function(data) {
             createTable(dataType, JSON.parse(data));
-            createAndAppendAdsElement('adOne', '1666208762');
+            if (dataType != 4) {
+                createAndAppendAdsElement('ad-1', '1666208762');
+            } else {
+                for (i = 3; i < 50; i+=4) {
+                    id = 'ad-'+parseInt(i)
+                    createAndAppendAdsElement(id, '1666208762');
+                }
+            }
         },
         error: function() {
         }
